@@ -1,0 +1,122 @@
+/* Estilo Geral */
+body {
+    font-family: 'Poppins', sans-serif; /* Fonte */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5; /* Fundo claro */
+    color: #333;
+    padding: 40px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #6A5ACD; /* Roxo suave */
+    padding: 20px 0px;
+}
+
+p {
+    text-align: justify;
+    color: #555;
+    line-height: 25px;
+    word-spacing: 5px;
+}
+
+/* Menu de Navegação */
+nav {
+    background-color: #5A9BD4; /* Azul médio */
+    padding: 3px 0;
+    position: fixed; /* Fixa no topo da página */
+    top: 0;
+    left: 0; /* Gruda no lado esquerdo */
+    width: 100%; /* Ocupa toda a largura */
+    z-index: 1000; /* Fica sobre outros elementos */
+}
+
+nav ul {
+    list-style: none; /* Remove os marcadores padrão */
+    margin: 0; /* Remove margem do ul */
+    padding: 0; /* Remove padding do ul */
+    display: flex; /* Alinha itens lado a lado */
+    justify-content: center; /* Centraliza os itens */
+}
+
+nav li {
+    margin: 0 15px; /* Espaçamento entre os itens */
+}
+
+nav a {
+    color: #FFF;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    transition: color 0.3s ease;
+    padding: 10px 15px; /* Melhora o clique */
+    display: inline-block;
+    text-align: center;
+}
+
+nav a:hover {
+    color: #FFC1CC; /* Rosa pastel */
+    background-color: #4A82B2; /* Fundo levemente mais escuro ao passar o mouse */
+    border-radius: 5px; /* Bordas arredondadas para hover */
+}
+
+/* Espaçamento para evitar que o conteúdo fique coberto pelo menu */
+body {
+    padding-top: 60px; /* Adiciona espaço no topo */
+}
+
+
+/* Fotos gerais */
+.foto-container img, 
+.foto-container-grande img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 12px; /* Bordas levemente arredondadas */
+    border: 3px solid #D8BFD8; /* Lilás */
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.foto-container img:hover, 
+.foto-container-grande img:hover {
+    transform: scale(1.05); /* Zoom suave */
+    border-color: #6A5ACD; /* Roxo ao passar o mouse */
+}
+
+/* Estilo exclusivo para index.html */
+.index-foto {
+    display: block;
+    margin: 30px auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%; /* Foto redonda */
+    border: 5px solid #FFC1CC; /* Rosa pastel */
+    object-fit: cover; /* Para centralizar e ajustar a imagem na borda */
+}
+
+/* Estilo para tabelas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+th, td {
+    border: 1px solid #DDD;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #6A5ACD;
+    color: #FFF;
+}
+
+/* Ajustes de Layout */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
